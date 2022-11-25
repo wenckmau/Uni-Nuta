@@ -4,7 +4,7 @@
    --blue:#00f5f5;
    --red:#e74c3c;
    --white:#fff;
-   --black:#222;
+   --black:rgb(0, 0, 0);
    --light-color:#E0E0E0;
    --border:.2rem solid var(--black);
    --color:var(--black);
@@ -52,7 +52,7 @@ html{
 body{
 
 
-   background-color: #222;
+   background-color: rgb(0, 0, 0);
 }
 section{
    margin:0 auto;
