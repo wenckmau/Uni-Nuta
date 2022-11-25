@@ -37,14 +37,21 @@ include 'components/add_cart.php';
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="title">
-Bine ati venit
+Bine ati venit!
 </div>
+<br><br><br><br><br><br><br><br>
+<div style="box">
+
+<p style="color:white" align="center"> sadasd </p>
+</div>
+
+<br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
 <center>
 
    <a href="contact.php">
    <div  class="btn">  
-   Da-ne un review
+   Vreo nelămurire? Click aici!
 </div>
 </a>
 
