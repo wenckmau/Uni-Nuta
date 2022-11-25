@@ -34,7 +34,20 @@ include 'components/add_cart.php';
 <body>
 
 <?php include 'components/user_header.php'; ?>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="title">
+Bine ati venit
+</div>
+<br><br><br><br><br><br><br><br>
+<center>
 
+   <a href="contact.php">
+   <div  class="btn">  
+   Da-ne un review
+</div>
+</a>
+
+</center>
 
 
 </body>
