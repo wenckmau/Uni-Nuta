@@ -5,7 +5,7 @@
    --red:#e74c3c;
    --white:#fff;
    --black:rgb(0, 0, 0);
-   --light-color:#E0E0E0;
+   --light-color:#919191;
    --border:.2rem solid var(--black);
    --color:var(--black);
    --colors:var(--white);
@@ -52,7 +52,7 @@ html{
 body{
 
 
-   background-color: #222;
+   background-color: rgb(0, 0, 0);
 }
 section{
    margin:0 auto;
@@ -427,20 +427,16 @@ section{
    border:var(--border);
    padding:1.4rem;
    font-size: 1.8rem;
-   color:var(--colors);
+   color:black;
+   border-radius: 20px;
 }
 
 .search-form form .fa-search{
    width: 6rem;
-   background-color: var(--colors);
+   background-color:black;
    color:var(--white);
    cursor: pointer;
    font-size: 2.5rem;
-}
-
-.search-form form .fa-search:hover{
-   background-color: var(--blue);
-   color:var(--colors);
 }
 
 
