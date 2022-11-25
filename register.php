@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Inregistreaza-te</title>
+   <title>Register</title>
 
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -72,14 +72,14 @@ if(isset($_POST['submit'])){
 <section class="form-container">
 
    <form action="" method="post">
-      <h3>Inregistreaza-te acum</h3>
-      <input type="text" name="name" required placeholder="Numele tau" class="box" maxlength="50">
-      <input type="email" name="email" required placeholder="Email" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="number" name="number" required placeholder="Numar de telefon" class="box" min="0" max="9999999999" maxlength="10">
-      <input type="password" name="pass" required placeholder="Parola" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="password" name="cpass" required placeholder="Confirma parola" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="submit" value="Inregistreaza" name="submit" class="btn">
-      <p>Ai deja cont?    <a href="login.php">Logeaza-te aici</a></p>
+      <h3>Register Now</h3>
+      <input type="text" name="name" required placeholder="Name" class="box" maxlength="50">
+      <input type="email" name="email" required placeholder="E-mail" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="number" name="number" required placeholder="Phone" class="box" min="0" max="9999999999" maxlength="10">
+      <input type="password" name="pass" required placeholder="Password" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" name="cpass" required placeholder="Re-enter password" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="submit" value="Register" name="submit" class="btn">
+      <p>Already a member?    <a href="login.php">Sign In!</a></p>
    </form>
 
 </section>

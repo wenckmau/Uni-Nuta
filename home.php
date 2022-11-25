@@ -37,7 +37,7 @@ include 'components/add_cart.php';
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="title">
-Bine ati venit!
+Welcome!
 </div>
 <br><br><br><br><br><br><br><br>
 <div style="box">
@@ -51,12 +51,12 @@ Bine ati venit!
 
    <a href="contact.php">
    <div  class="btn">  
-   Vreo nelămurire? Click aici!
+   Any questions? Click Here!
 </div>
 </a>
 
 </center>
 
-
+<script src="js/script.js"></script>
 </body>
 </html>

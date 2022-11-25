@@ -61,8 +61,8 @@ if(isset($_POST['send'])){
 
 
 <div class="heading">
-   <h3>Contact</h3>
-   <p><a href="home.php">acasa</a> <span> / contact</span></p>
+   <h3>Contact Us</h3>
+   <p><a href="home.php">Home</a> <span> / Contact Us</span></p>
 </div>
 
 
@@ -76,12 +76,12 @@ if(isset($_POST['send'])){
       </div>
 
       <form action="" method="post">
-         <h3>Cu ce te putem ajuta?</h3>
-         <input type="text" name="name" maxlength="50" class="box" placeholder="Numele tau" required>
-         <input type="number" name="number" min="0" max="9999999999" class="box" placeholder="Telefon" required maxlength="10">
-         <input type="email" name="email" maxlength="50" class="box" placeholder="Email" required>
-         <textarea name="msg" class="box" required placeholder="Scrie aici cu ce te puten ajuta" maxlength="500" cols="30" rows="10"></textarea>
-         <input type="submit" value="Trimite" name="send" class="btn">
+         <h3>How can we help?</h3>
+         <input type="text" name="name" maxlength="50" class="box" placeholder="Name" required>
+         <input type="number" name="number" min="0" max="9999999999" class="box" placeholder="Phone" required maxlength="10">
+         <input type="email" name="email" maxlength="50" class="box" placeholder="E-mail" required>
+         <textarea name="msg" class="box" required placeholder="Write about your problem" maxlength="500" cols="30" rows="10"></textarea>
+         <input type="submit" value="Send" name="send" class="btn">
       </form>
 
    </div>

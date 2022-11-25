@@ -16,12 +16,12 @@ if(isset($message)){
 
    <section class="flex">
 
-      <a href="home.php" class="logo">M.C NBS</a>
+      <a href="home.php" class="logo">MC NBS</a>
 
       <nav class="navbar">
-         <a href="home.php">Acasa</a>
-         <a href="about.php">Despre</a>
-         <a href="contact.php">Contacteaza-ne</a>
+         <a href="home.php">Home</a>
+         <a href="about.php">About</a>
+         <a href="contact.php">Contact Us</a>
       </nav>
 
       <div class="icons">
@@ -46,8 +46,8 @@ if(isset($message)){
          <?php
             }else{
          ?>
-            <p class="name">Te rog sa te logezi mai intati</p>
-            <a href="login.php" class="btn">Logeaza-te</a>
+            <p class="name">Please Sign In</p>
+            <a href="login.php" class="btn">Sign In</a>
            
          <?php
           }
