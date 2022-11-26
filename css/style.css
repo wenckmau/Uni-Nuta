@@ -492,6 +492,28 @@ section{
    color:black;
 }
 
+.form-container form .box1{
+   margin:.7rem 0;
+   width: 100%;
+   border:var(--border);
+   padding:1.4rem;
+   font-size: 1.8rem;
+   color:black;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+.form-container form .box4{
+   margin:.7rem 0;
+   width: 100%;
+   border:var(--border);
+   padding:1.4rem;
+   font-size: 1.8rem;
+   color:black;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+
 .form-container form p{
    margin-top: 1.5rem;
    font-size: 2rem;
