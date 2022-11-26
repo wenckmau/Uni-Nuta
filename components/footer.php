@@ -47,6 +47,9 @@
 <div class="loader">
    <img src="images/loader.gif" alt="">
 
+
+
+
 <script>
 
 const btn = document
@@ -72,7 +75,7 @@ cardHolder
 
         currentText.classList.toggle('card__read-more--open');
 
-        current.textContent = current.textContent.includes('Read More...') ? 'Read Less' : 'Read More';
+        current.textContent = current.textContent.includes('Read More') ? 'Read Less' : 'Read More';
 
     });
 
