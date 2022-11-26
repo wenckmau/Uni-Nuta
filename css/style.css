@@ -411,6 +411,32 @@ section{
    width: 100%;
 }
 
+.contact .row form .box1{
+   margin:.7rem 0;
+   font-size: 1.8rem;
+   color:black;
+   border:var(--border);
+   padding:1.4rem;
+   width: 100%;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+.contact .row form .box4{
+   margin:.7rem 0;
+   font-size: 1.8rem;
+   color:black;
+   border:var(--border);
+   padding:1.4rem;
+   width: 100%;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+
+.contact .row form .btn {
+   border-radius: 10px;
+}
+
 .contact .row form textarea{
    height: 15rem;
    resize: none;
