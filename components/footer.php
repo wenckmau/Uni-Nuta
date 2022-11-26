@@ -4,11 +4,7 @@
 
          
       <div class="box">
-        <p style="color:white"> sbfhkajsdbkfjabskfdjbaskfdjkajsbf
-     
-sbfhkajsdbkfjabskfdjbaskfdjkajsbf<br>
-sdada
- </p>
+       <img src="images/pic-5.png">
       </div>
       <div class="box">
         <p style="color:white"> sbfhkajsdbkfjabskfdjbaskfdjkajsbf
@@ -16,6 +12,9 @@ sdada
 sbfhkajsdbkfjabskfdjbaskfdjkajsbf<br>
 sdada
  </p>
+      </div>
+      <div class="box">
+       <img src="images/pic-5.png">
       </div>
 
 
