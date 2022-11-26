@@ -112,18 +112,19 @@ section{
 }
 
 .btn{
-   background-color: var(--red);
+   background-color: #dc1c1c;
    color:var(--colors);
+   border-radius: 20px;
 }
 
 .delete-btn{
-   background-color: var(--red);
+   background-color: #250303;
    color:var(--color);
 }
 
 .btn:hover,
 .delete-btn:hover{
-   letter-spacing: .2rem;
+   background-color: var(--red);
 }
 
 .disabled{
@@ -490,6 +491,7 @@ section{
    padding:1.4rem;
    font-size: 1.8rem;
    color:black;
+   border-radius: 10px;
 }
 
 .form-container form .box1{
@@ -526,6 +528,10 @@ section{
 
 .form-container form p a:hover{
    text-decoration: underline;
+}
+
+.form-container form button {
+   margin-top: 7px;
 }
 
 .user-details .user{
