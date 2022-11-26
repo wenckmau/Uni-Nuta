@@ -40,9 +40,9 @@ if(!isset($admin_id)){
    <div class="box-container">
 
    <div class="box">
-      <h3>Buna!</h3>
+      <h3>Hello!</h3>
       <p><?= $fetch_profile['name']; ?></p>
-      <a href="update_profile.php" class="btn">Editeaza profil</a>
+      <a href="update_profile.php" class="btn">Edit Profile</a>
    </div>
 
    <div class="box">
