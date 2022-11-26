@@ -56,7 +56,10 @@ Welcome!
 </a>
 
 </center>
-
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+   
+</div>
 <script src="js/script.js"></script>
 </body>
 </html>

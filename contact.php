@@ -74,13 +74,12 @@ if(isset($_POST['send'])){
       <div class="image">
          <img src="images/contact-img.svg" alt="">
       </div>
-
       <form action="" method="post">
          <h3>How can we help?</h3>
-         <input type="text" name="name" maxlength="50" class="box1" placeholder="Name" required>
+         <input type="text" name="name" maxlength="50" class="box" placeholder="Name" required>
          <input type="number" name="number" min="0" max="9999999999" class="box" placeholder="Phone" required maxlength="10">
          <input type="email" name="email" maxlength="50" class="box" placeholder="E-mail" required>
-         <textarea name="msg" class="box4" required placeholder="Write about your problem" maxlength="500" cols="30" rows="10"></textarea>
+         <textarea name="msg" class="box" required placeholder="Write about your problem" maxlength="500" cols="30" rows="10"></textarea>
          <input type="submit" value="Send" name="send" class="btn">
       </form>
 
@@ -99,8 +98,10 @@ if(isset($_POST['send'])){
 
 
 
-
-<?php include 'components/footer.php'; ?>
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+   
+</div>
 
 
 
