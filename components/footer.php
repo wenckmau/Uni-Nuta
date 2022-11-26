@@ -6,7 +6,7 @@
 		<div class="container">
 			<div class="content-section">
 				<div class="title">
-					<h1>secure</h1>
+					<h1>What`s our purpose?</h1>
 				</div>
 				<div class="content">
 					

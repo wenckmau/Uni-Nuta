@@ -48,3 +48,14 @@ function readmore() {
      
    }
  }
+ $( "myBtn" ).click(function() {
+   $( ".content" ).slideToggle( "fast" );
+       var $this = $(this);
+         $this.toggleClass("open");
+ 
+         if ($this.hasClass("open")) {
+             $this.html("Less");
+         } else {
+             $this.html("Read more");
+         }
+ });
