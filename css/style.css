@@ -166,7 +166,7 @@ section{
    text-align: center;
    width: 100%;
    font-size: 2rem;
-   text-transform: capitalize;
+  
    color:var(--red);
 }
 
@@ -806,3 +806,4 @@ section{
 }
 
 }
+#more {display: none;}

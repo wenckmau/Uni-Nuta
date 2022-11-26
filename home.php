@@ -42,7 +42,12 @@ Welcome!
 <br><br><br><br><br><br><br><br>
 <div style="box">
 
-<p style="color:white" align="center"> sadasd </p>
+<p class="empty" align="center">This is our new website,
+   <br> where we try to help 
+everyone who wishes to find the perfect highschool to fit in.
+
+
+</p>
 </div>
 
 <br><br><br><br><br><br><br><br>

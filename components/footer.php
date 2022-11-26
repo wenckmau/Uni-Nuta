@@ -9,20 +9,14 @@
 					<h1>secure</h1>
 				</div>
 				<div class="content">
-					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					
+					<p class="content" align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   <span id="dots">...</span><span id="more"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-               <br>
-               <h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-					<div class="button">
-						<a href="">Read More</a>
-					</div>
+					consequat. </span></p>
+					<button class="btn" onclick="readmore()" id="myBtn">Read more</button>
+					
 				</div>
 				<div class="social">
 					<a href=""><i class="fab fa-facebook-f"></i></a>
