@@ -39,6 +39,7 @@ function readmore() {
  
    if (dots.style.display === "none") {
      dots.style.display = "inline";
+     
      btnText.innerHTML = "Read more";
      moreText.style.display = "none";
    } else {
@@ -48,14 +49,4 @@ function readmore() {
      
    }
  }
- $( "myBtn" ).click(function() {
-   $( ".content" ).slideToggle( "fast" );
-       var $this = $(this);
-         $this.toggleClass("open");
  
-         if ($this.hasClass("open")) {
-             $this.html("Less");
-         } else {
-             $this.html("Read more");
-         }
- });
