@@ -743,6 +743,7 @@ section{
 	padding-top: 100px;
 }
 .content-section{
+	float: left;
 	width: 55%;
 }
 .image-section{
@@ -873,4 +874,5 @@ p{
  
  .read-more-btn:hover{
    background-color: #e74c3c;
+   
  }
