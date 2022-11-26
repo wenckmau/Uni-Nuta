@@ -17,12 +17,13 @@
 
   <div class="card-contents">
 	<p>
-	This concept was created out of the curiosity of...
+	This concept was created out of the curiosity of <span id="dots">...</span>
 
 	  <span class="card__read-more">5 Highschool students from Hunedoara. Being surrounded by alot of teachers during our 12 year stay in this educational system, we saw that alot of the problems regarding the way that pupils recieve information from their teacher is granted to the lack of communication and feedback towards eachother.  <br>That`s why, today, we present you, our solution to this common problem that we are all facing.</span>
 	</p>
+	<br><br><br><br><br><br><br>
+	<p class="read-more-btn" onclick="readmore()" id="myBtn">Read More</p>
 
-	<p class="read-more-btn">Read More</p>
 
   </div>
 
