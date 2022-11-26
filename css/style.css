@@ -392,7 +392,7 @@ section{
 .contact .row form{
    border:var(--border);
    flex:1 1 40rem;
-   padding:2rem;
+   padding:5rem;
    text-align: center;
 }
 
@@ -489,7 +489,7 @@ section{
    border:var(--border);
    padding:1.4rem;
    font-size: 1.8rem;
-   color:var(--colors);
+   color:black;
 }
 
 .form-container form p{
