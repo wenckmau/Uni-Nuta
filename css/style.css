@@ -743,7 +743,6 @@ section{
 	padding-top: 100px;
 }
 .content-section{
-	float: left;
 	width: 55%;
 }
 .image-section{
@@ -835,3 +834,43 @@ section{
 
 }
 #more {display: none;}
+
+
+
+
+
+p{
+   font-size: 0.8em;
+   margin-bottom: 1rem;
+ }
+ 
+ .card__read-more{
+   display: block;
+   opacity: 0;
+   height: 0;
+   transition: all 0.25s;
+ }
+ 
+ .card__read-more--open{
+   display: block;
+   opacity: 1;
+   height: 18rem;
+ }
+ 
+ .read-more-btn{
+   display: inline-block;
+   color: var(--accent);
+   background-color: #dc1c1c;
+   padding: 0.6rem 1.5rem;
+   font-size: 1em;
+   position: relative;
+   z-index: 1;
+   transition: all 0.5s;
+   cursor: pointer;
+   border-radius: 20px;
+   color: white;
+ }
+ 
+ .read-more-btn:hover{
+   background-color: #e74c3c;
+ }

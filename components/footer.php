@@ -10,15 +10,26 @@
 				</div>
 				<div class="content">
 					
-					<p class="content" align="center">This concept was created out of the curiosity of 
-   <span id="dots">...</span><span id="more"><br>5 Highschool students from Hunedoara. Being surrounded by alot of teachers during our 12 year stay in this educational system, we saw that alot of the problems regarding the way that pupils recieve information from their teacher is granted to the lack of communication and feedback towards eachother. That`s why, today, we present you, our solution to this common problem that we are all facing.    </span></p>
-					<button class="btn" onclick="readmore()" id="myBtn">Read more</button>
 					
-				</div>
-				<br><br><br><br><br><br><br><br><br>
-				<br><br><br><br><br><br><br><br><br>
-				<br><br><br><br><br><br><br><br><br>
-				<br><br><br><br><br><br><br><br><br>
+  <div class="card-holder">
+
+<div class="card">
+
+  <div class="card-contents">
+	<p>
+	This concept was created out of the curiosity of...
+
+	  <span class="card__read-more">5 Highschool students from Hunedoara. Being surrounded by alot of teachers during our 12 year stay in this educational system, we saw that alot of the problems regarding the way that pupils recieve information from their teacher is granted to the lack of communication and feedback towards eachother. That`s why, today, we present you, our solution to this common problem that we are all facing.</span>
+	</p>
+
+	<p class="read-more-btn">Read More</p>
+
+  </div>
+
+
+</div>
+					
+	</div>
 				<div class="social">
 					<a href=""><i class="fab fa-facebook-f"></i></a>
 					<a href=""><i class="fab fa-twitter"></i></a>
@@ -35,5 +46,36 @@
 
 <div class="loader">
    <img src="images/loader.gif" alt="">
+
+<script>
+
+const btn = document
+    .querySelector('.read-more-btn');
+
+const text = document
+    .querySelector('.card__read-more');
+
+const cardHolder = document
+    .querySelector('.card-holder');
+
+cardHolder
+    .addEventListener('click', e => {
+
+        const current = e.target;
+
+        const isReadMoreBtn = current.className.includes('read-more-btn');
+
+        if (!isReadMoreBtn)
+            return;
+
+        const currentText = e.target.parentNode.querySelector('.card__read-more');
+
+        currentText.classList.toggle('card__read-more--open');
+
+        current.textContent = current.textContent.includes('Read More...') ? 'Read Less' : 'Read More';
+
+    });
+
+</script>
    
 </div>
