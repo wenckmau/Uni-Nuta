@@ -15,15 +15,15 @@ if(isset($message)){
 
    <section class="flex">
 
-      <a href="dashboard.php" class="logo">Panou<span>Admin</span></a>
+      <a href="dashboard.php" class="logo">Panel<span>Admin</span></a>
 
       <nav class="navbar">
-         <a href="dashboard.php">Acasa</a>
-         <a href="products.php">Produse</a>
-         <a href="placed_orders.php">Comenzi</a>
-         <a href="admin_accounts.php">Adminii</a>
-         <a href="users_accounts.php">Utilizatori</a>
-         <a href="messages.php">mesaje</a>
+         <a href="dashboard.php">Home</a>
+         <a href="products.php"></a>
+         <a href="placed_orders.php"></a>
+         <a href="admin_accounts.php">Admins</a>
+         <a href="users_accounts.php">Users</a>
+         <a href="messages.php">Messages</a>
       </nav>
 
       <div class="icons">
@@ -38,9 +38,9 @@ if(isset($message)){
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
          <p><?= $fetch_profile['name']; ?></p>
-         <a href="update_profile.php" class="btn">profil</a>
+         <a href="update_profile.php" class="btn">profile</a>
          
-         <a href="../components/admin_logout.php" onclick="return confirm('Vrei sa dai logout?');" class="delete-btn">logout</a>
+         <a href="../components/admin_logout.php" onclick="return confirm('Do you want to logout?');" class="delete-btn">logout</a>
       </div>
 
    </section>

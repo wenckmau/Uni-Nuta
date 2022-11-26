@@ -39,8 +39,8 @@ if(isset($message)){
          ?>
          <p class="name"><?= $fetch_profile['name']; ?></p>
          <div class="flex">
-            <a href="profile.php" class="btn">profil</a>
-            <a href="components/user_logout.php" onclick="return confirm('Vrei sa dai logut');" class="delete-btn">logout</a>
+            <a href="profile.php" class="btn">profile</a>
+            <a href="components/user_logout.php" onclick="return confirm('Do you want to logout?');" class="delete-btn">logout</a>
          </div>
       
          <?php

@@ -51,16 +51,16 @@ if(isset($_GET['delete'])){
          while($fetch_messages = $select_messages->fetch(PDO::FETCH_ASSOC)){
    ?>
    <div class="box">
-      <p> Nume : <span><?= $fetch_messages['name']; ?></span> </p>
-      <p> Telefon : <span><?= $fetch_messages['number']; ?></span> </p>
+      <p> Name : <span><?= $fetch_messages['name']; ?></span> </p>
+      <p> Phone : <span><?= $fetch_messages['number']; ?></span> </p>
       <p> Email : <span><?= $fetch_messages['email']; ?></span> </p>
-      <p> Mesaj : <span><?= $fetch_messages['message']; ?></span> </p>
+      <p> Message : <span><?= $fetch_messages['message']; ?></span> </p>
       <a href="messages.php?delete=<?= $fetch_messages['id']; ?>" class="delete-btn" onclick="return confirm('delete this message?');">Sterge</a>
    </div>
    <?php
          }
       }else{
-         echo '<p class="empty">Nu ai mesaje</p>';
+         echo '<p class="empty">You have got too many messages</p>';
       }
    ?>
 

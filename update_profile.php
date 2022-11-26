@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
       $select_email = $conn->prepare("SELECT * FROM `users` WHERE email = ?");
       $select_email->execute([$email]);
       if($select_email->rowCount() > 0){
-         $message[] = 'emailul este deja folosit!';
+         $message[] = 'The email already exists!';
       }else{
          $update_email = $conn->prepare("UPDATE `users` SET email = ? WHERE id = ?");
          $update_email->execute([$email, $user_id]);
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
       $select_number = $conn->prepare("SELECT * FROM `users` WHERE number = ?");
       $select_number->execute([$number]);
       if($select_number->rowCount() > 0){
-         $message[] = 'numarul de telefon este deja folosit!';
+         $message[] = 'Phone number already exists!';
       }else{
          $update_number = $conn->prepare("UPDATE `users` SET number = ? WHERE id = ?");
          $update_number->execute([$number, $user_id]);
@@ -63,16 +63,16 @@ if(isset($_POST['submit'])){
 
    if($old_pass != $empty_pass){
       if($old_pass != $prev_pass){
-         $message[] = 'parola vehce nu se potriveste!';
+         $message[] = 'The old password does not match!';
       }elseif($new_pass != $confirm_pass){
-         $message[] = 'parolele nu se potrivesc!';
+         $message[] = 'The passwords does not match!';
       }else{
          if($new_pass != $empty_pass){
             $update_pass = $conn->prepare("UPDATE `users` SET password = ? WHERE id = ?");
             $update_pass->execute([$confirm_pass, $user_id]);
-            $message[] = 'parola a fost schimbata cu succes!';
+            $message[] = 'Password change successfull!';
          }else{
-            $message[] = 'introdu o parola noua!';
+            $message[] = 'Write a new password';
          }
       }
    }  
@@ -105,7 +105,7 @@ if(isset($_POST['submit'])){
 <section class="form-container update-form">
 
    <form action="" method="post">
-      <h3>Actualizeaza profilul</h3>
+      <h3>Update profile</h3>
       <input type="text" name="name" placeholder="<?= $fetch_profile['name']; ?>" class="box" maxlength="50">
       <input type="email" name="email" placeholder="<?= $fetch_profile['email']; ?>" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="number" name="number" placeholder="<?= $fetch_profile['number']; ?>"" class="box" min="0" max="9999999999" maxlength="10">
