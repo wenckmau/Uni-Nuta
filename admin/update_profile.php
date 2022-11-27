@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
       $select_name = $conn->prepare("SELECT * FROM `admin` WHERE name = ?");
       $select_name->execute([$name]);
       if($select_name->rowCount() > 0){
-         $message[] = 'Numele de utilizator este deja folosit!';
+         $message[] = 'Name already in use!';
       }else{
          $update_name = $conn->prepare("UPDATE `admin` SET name = ? WHERE id = ?");
          $update_name->execute([$name, $admin_id]);
@@ -40,16 +40,16 @@ if(isset($_POST['submit'])){
 
    if($old_pass != $empty_pass){
       if($old_pass != $prev_pass){
-         $message[] = 'parola veche nu se potriveste!';
+         $message[] = 'The old password does not match!';
       }elseif($new_pass != $confirm_pass){
-         $message[] = 'parolele nu se potrivesc!';
+         $message[] = 'The passwords does not match!';
       }else{
          if($new_pass != $empty_pass){
             $update_pass = $conn->prepare("UPDATE `admin` SET password = ? WHERE id = ?");
             $update_pass->execute([$confirm_pass, $admin_id]);
-            $message[] = 'parola actualizata cu succes';
+            $message[] = 'Password updated';
          }else{
-            $message[] = 'introdu o parola noua!';
+            $message[] = 'Write a new password!';
          }
       }
    }
@@ -81,7 +81,7 @@ if(isset($_POST['submit'])){
 <section class="form-container">
 
    <form action="" method="POST">
-      <h3>Schimba parola</h3>
+      <h3>Change password</h3>
       <input type="text" name="name" maxlength="20" class="box" oninput="this.value = this.value.replace(/\s/g, '')" placeholder="<?= $fetch_profile['name']; ?>">
       <input type="password" name="old_pass" maxlength="20" placeholder="parola veche" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="password" name="new_pass" maxlength="20" placeholder="parola noua" class="box" oninput="this.value = this.value.replace(/\s/g, '')">

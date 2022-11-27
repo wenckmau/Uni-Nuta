@@ -46,7 +46,7 @@ if(isset($_GET['delete'])){
 
 <section class="accounts">
 
-   <h1 class="heading">Conturi utilizatori</h1>
+   <h1 class="heading">Users account</h1>
 
    <div class="box-container">
 
@@ -57,14 +57,14 @@ if(isset($_GET['delete'])){
          while($fetch_accounts = $select_account->fetch(PDO::FETCH_ASSOC)){  
    ?>
    <div class="box">
-      <p> Numar utilizator : <span><?= $fetch_accounts['id']; ?></span> </p>
-      <p> Utilizator : <span><?= $fetch_accounts['name']; ?></span> </p>
-      <a href="users_accounts.php?delete=<?= $fetch_accounts['id']; ?>" class="delete-btn" onclick="return confirm('Stergi acest cont?');">Sterge</a>
+      <p> User name : <span><?= $fetch_accounts['id']; ?></span> </p>
+      <p> Users : <span><?= $fetch_accounts['name']; ?></span> </p>
+      <a href="users_accounts.php?delete=<?= $fetch_accounts['id']; ?>" class="delete-btn" onclick="return confirm('Do you want to delete this account?');">Sterge</a>
    </div>
    <?php
       }
    }else{
-      echo '<p class="empty">nu exista utilizatori</p>';
+      echo '<p class="empty">There are no users</p>';
    }
    ?>
 

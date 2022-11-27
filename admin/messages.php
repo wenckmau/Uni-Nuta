@@ -40,7 +40,7 @@ if(isset($_GET['delete'])){
 
 <section class="messages">
 
-   <h1 class="heading">Mesaje</h1>
+   <h1 class="heading">Messages</h1>
 
    <div class="box-container">
 
@@ -55,7 +55,7 @@ if(isset($_GET['delete'])){
       <p> Phone : <span><?= $fetch_messages['number']; ?></span> </p>
       <p> Email : <span><?= $fetch_messages['email']; ?></span> </p>
       <p> Message : <span><?= $fetch_messages['message']; ?></span> </p>
-      <a href="messages.php?delete=<?= $fetch_messages['id']; ?>" class="delete-btn" onclick="return confirm('delete this message?');">Sterge</a>
+      <a href="messages.php?delete=<?= $fetch_messages['id']; ?>" class="delete-btn" onclick="return confirm('delete this message?');">Delete</a>
    </div>
    <?php
          }

@@ -58,13 +58,13 @@ if(isset($_GET['delete'])){
          while($fetch_accounts = $select_account->fetch(PDO::FETCH_ASSOC)){  
    ?>
    <div class="box">
-      <p> Numar admin: <span><?= $fetch_accounts['id']; ?></span> </p>
-      <p> Nume admin : <span><?= $fetch_accounts['name']; ?></span> </p>
+      <p> admin number: <span><?= $fetch_accounts['id']; ?></span> </p>
+      <p> admin name : <span><?= $fetch_accounts['name']; ?></span> </p>
       <div class="flex-btn">
          <a href="admin_accounts.php?delete=<?= $fetch_accounts['id']; ?>" class="delete-btn" onclick="return confirm('delete this account?');">sterge</a>
          <?php
             if($fetch_accounts['id'] == $admin_id){
-               echo '<a href="update_profile.php" class="option-btn">actualizeaza</a>';
+               echo '<a href="update_profile.php" class="option-btn">update</a>';
             }
          ?>
       </div>
@@ -72,7 +72,7 @@ if(isset($_GET['delete'])){
    <?php
       }
    }else{
-      echo '<p class="empty">nu exista conturi</p>';
+      echo '<p class="empty">There are no accounts </p>';
    }
    ?>
 

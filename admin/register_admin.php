@@ -23,14 +23,14 @@ if(isset($_POST['submit'])){
    $select_admin->execute([$name]);
    
    if($select_admin->rowCount() > 0){
-      $message[] = 'Numele de utilizator exista deja';
+      $message[] = 'Name already exists';
    }else{
       if($pass != $cpass){
-         $message[] = 'parolele nu se potrivesc';
+         $message[] = 'Passwords does not match';
       }else{
          $insert_admin = $conn->prepare("INSERT INTO `admin`(name, password) VALUES(?,?)");
          $insert_admin->execute([$name, $cpass]);
-         $message[] = 'noul adimin a fost inregistrat cu succes';
+         $message[] = 'Successfully registered';
       }
    }
 
@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
 <section class="form-container">
 
    <form action="" method="POST">
-      <h3>Inregistreza Admin</h3>
+      <h3>Admin registration</h3>
       <input type="text" name="name" maxlength="20" required placeholder="nume utilizator" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="password" name="pass" maxlength="20" required placeholder="parola" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="password" name="cpass" maxlength="20" required placeholder="confrima parola" class="box" oninput="this.value = this.value.replace(/\s/g, '')">

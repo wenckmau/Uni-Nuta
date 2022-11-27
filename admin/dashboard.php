@@ -102,8 +102,8 @@ if(!isset($admin_id)){
          $numbers_of_users = $select_users->rowCount();
       ?>
       <h3><?= $numbers_of_users; ?></h3>
-      <p>Utilizatori</p>
-      <a href="users_accounts.php" class="btn">vezi utilizatori</a>
+      <p>Users</p>
+      <a href="users_accounts.php" class="btn">See users</a>
    </div>
 
    <div class="box">
@@ -113,8 +113,8 @@ if(!isset($admin_id)){
          $numbers_of_admins = $select_admins->rowCount();
       ?>
       <h3><?= $numbers_of_admins; ?></h3>
-      <p>adminii</p>
-      <a href="admin_accounts.php" class="btn">vezi adminii</a>
+      <p>admins</p>
+      <a href="admin_accounts.php" class="btn">See admins</a>
    </div>
 
    <div class="box">
@@ -124,8 +124,8 @@ if(!isset($admin_id)){
          $numbers_of_messages = $select_messages->rowCount();
       ?>
       <h3><?= $numbers_of_messages; ?></h3>
-      <p>mesaje noi</p>
-      <a href="messages.php" class="btn">vezi mesaje</a>
+      <p>New messages</p>
+      <a href="messages.php" class="btn">See messages</a>
    </div>
 
    </div>
